@@ -653,7 +653,7 @@ a.cht-dt,p.cht-dt {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    padding: 1em 5em;
+    padding: 1.5rem 12.5rem;
     max-width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -675,4 +675,50 @@ a.cht-dt {
 p.cht-dt {
     text-transform: capitalize;
     cursor: progress
+}
+
+
+body {margin: 0;}
+
+.scroll-left {
+height: 30px; 
+overflow: hidden;
+position: relative;
+background-color: red;
+}
+.scroll-left .second {margin-left: 100%;}
+.scroll-left p {
+color: #fff;
+font-weight: 600;
+position: absolute;
+width: 100%;
+height: 100%;
+margin: 0;
+font-size: 18px;
+line-height: 30px;
+text-align: center;
+/* Apply animation */ 
+-moz-animation: scroll-left 15s linear infinite;
+-webkit-animation: scroll-left 15s linear infinite;
+animation: scroll-left 15s linear infinite;
+}
+/* Define the animation */
+@-moz-keyframes scroll-left {
+0% { -moz-transform: translateX(0%); }
+100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+0% { -webkit-transform: translateX(0%); }
+100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+0% { 
+-moz-transform: translateX(0%);
+-webkit-transform: translateX(0%);
+transform: translateX(0%); 
+}
+100% { 
+-moz-transform: translateX(-100%);
+-webkit-transform: translateX(-100%);
+transform: translateX(-100%); 
 }

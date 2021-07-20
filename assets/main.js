@@ -17,7 +17,7 @@ window.onscroll = () =>{
     Author: Siva - Creators Help Tamil
     Website: https://creatorshelptamil.blogspot.com/
 */
-var opt = { time: 5, txt1: "Anda Dapat Mengunduh File Dalam ", txt2: " Detik", onload: true }; /* Customizable Values */
+var opt = { time: 20, txt1: "Anda Dapat Mengunduh File Dalam ", txt2: " Detik", onload: true }; /* Customizable Values */
 var a = document.querySelectorAll("a");
 a.forEach((a) => {
  if (a.href.match(/#cht-dt/g)) {
@@ -53,3 +53,6 @@ a.forEach((a) => {
   }
  }
 });
+
+
+
